@@ -2,12 +2,14 @@ package square
 
 import "math"
 
+var (
+	SidesTriangle int = 3
+	SidesSquare int = 4
+	SidesCircle int = 0
+)
 type CustomInt int
 
 func CalcSquare(sideLen float64, sidesNum CustomInt) float64 {
-	SidesTriangle := 3
-	SidesSquare := 4
-	SidesCircle := 0
 	var Square float64
 	switch int(sidesNum) {
 	case SidesCircle:
